@@ -15,7 +15,7 @@ body{
 
 /* Some definitions */
 :root {
-    --primary-color: #4891ff;
+    --primary-color: #4E8098;
     --light-color: #fafaf6;
     --dark-color: #111;
 }
@@ -408,7 +408,7 @@ img {
 .computation-v2 .card-heading {
     margin-top: 8px;
     margin-bottom: 10px;
-    color: #4891ff;
+    color: #0B5351;
     line-height: 1.2;
     font-weight: 600;
 }
