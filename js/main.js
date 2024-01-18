@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
 // Mobile Menu
 document.addEventListener('DOMContentLoaded', () => {
     const hamburgerButton = document.querySelector('.hamburger-button');
