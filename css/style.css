@@ -37,12 +37,19 @@ img {
 /* Navbar */
 .navbar {
     background: #fff;
-    padding: 20px;
+    padding: 10px;
 }
 
 .navbar .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    min-height: 25px;
+    max-height: 25px;
+    object-fit: cover;
     align-items: center;
 }
 
@@ -79,7 +86,7 @@ img {
     /* background: url('../images/UA_back2.jpg') no-repeat;
     background-size: cover;
     background-position: center bottom; */
-    height: 350px;
+    height: 380px;
     /* border-radius: 25px; */
 }
 
