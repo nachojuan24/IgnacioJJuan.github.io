@@ -65,7 +65,7 @@ img {
 }
 
 .navbar ul li a:hover {
-    color: var(--primary-color);
+    color: var(--light-color);
 }
 
 .navbar ul li:last-child a {
@@ -109,8 +109,13 @@ img {
     padding: 10px 0 40px;
 }
 
+.presentation .container{
+    min-height: 650px;
+    align-items: center;
+}
+
 .presentation .presentation-heading {
-    padding: 10px 0 0;
+    padding: 50px 100px 0 0;
 }
 
 .presentation .presentation-body {
@@ -125,16 +130,16 @@ img {
 
 .presentation .presentation-grid {
     display: grid;
-    background-color: #333;
-    border-radius: 15px;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 40px;
-    padding: 25px;
+    grid-template-columns: 0.9fr 1.6fr;
+    gap: 30px;
+    padding: 0;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 50px;
-    box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+    margin-top: 10px;
+    margin-bottom: 40px;
+    /* border-radius: 15px; */
+    /* background-color: #333;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.2); */
 }
 
 .presentation .A-col {
@@ -145,15 +150,15 @@ img {
 }
 
 .presentation .B-col {
-    margin-left: 30px;
-    margin-right: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 0;
     margin-bottom: 15px;
 }
 
 .presentation .presentation-pic {
-    min-height: 450px;
-    max-height: 450px;
+    min-height: 400px;
+    max-height: 400px;
     object-fit: cover;
     border-radius: 5px;
 }
