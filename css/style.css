@@ -846,6 +846,7 @@ img {
         margin-left: 10px;
     } */
 
+    
     .hero .hero-content,
     .hero .hero-text {
         width: 100%;
@@ -858,16 +859,110 @@ img {
         width: 100%;
     }
 
-    .testimonials .testimonials-heading {
+    /* .testimonials .testimonials-heading {
         width: 100%;
         text-align: center;
-    }
+    } */
 
-    .testimonials .testimonials-grid, 
+    /* .testimonials .testimonials-grid, 
     .pricing .pricing-grid, 
     .footer .footer-grid {
         grid-template-columns: 1fr;
+    } */
+ 
+
+    .presentation .presentation-grid,
+    .footer .footer-grid {
+        grid-template-columns: 1fr;
     }
+
+    .presentation .presentation-heading {
+        padding: 50px 0 0 0;
+    }
+
+    .presentation .A-col{
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        margin-bottom: -10px;
+        margin-top: 10px;
+    }
+      
+    .presentation .presentation-pic{
+        max-height: 250px;
+        min-height: 200px;
+    }
+
+    .presentation .presentation-final{
+        padding-bottom: 10px;
+    }
+
+    .presentation .btn-div {
+        text-align: center;
+    }
+
+    .presentation .btn{
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+    }
+
+    /* EDUCATION */
+
+    .scientific .scientific-heading{
+        text-align: center;
+    }
+
+    .scientific .top-collage{
+        grid-template-columns: 1fr;
+    }
+
+    .scientific .A-card,
+    .scientific .B-card{
+        min-height: 200px;
+        max-height: 200px;
+    }
+   
+    .scientific .A-card{
+        background-image: url('../images/UV_back_mobile.jpg');        
+    }
+
+    .scientific .B-card{
+        background-image: url('../images/UA_back_mobile.jpg');
+    }
+
+    .scientific .card-heading {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: #fff;
+        line-height: 1.2;
+        font-weight: 600;
+    }
+    
+    .scientific .A-card-subheading,
+    .scientific .B-card-subheading {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    /* COMPUTATIONAL SKILLS */
+
+    .computation-v2 .computation-v2-heading{
+        text-align: center;
+    }
+
+    .computation-v2 .top-collage,
+    .computation-v2 .bottom-collage{
+        grid-template-columns: 1fr;
+    }
+
+    /* SKILLS */
+    .faq .faq-header{
+        text-align: center;
+    }
+
+    /* FOOTER */
 
     .footer .card{
         margin-right: 0;
@@ -878,7 +973,7 @@ img {
     }
 
     /* Text */
-    .text-xl {
+    .text-xl, .text-xl-bold {
         font-size: 1.9rem;
     }
 
@@ -887,7 +982,7 @@ img {
     }
 
     .text-md {
-        font-size: 1.1rem;
+        font-size: 1.0rem;
     }
 }
 
