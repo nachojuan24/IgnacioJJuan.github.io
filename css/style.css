@@ -259,7 +259,7 @@ img {
     display: inline-block;
     padding: 0;
     background: var(--light-color);
-    color: #333;
+    /* color: #333; */
     /* font-weight: 600; */
     text-decoration: none;
     border: none;
@@ -444,7 +444,6 @@ img {
     display: inline-block;
     padding: 0;
     background: var(--light-color);
-    color: #333;
     /* font-weight: 600; */
     text-decoration: none;
     border: none;
@@ -452,6 +451,10 @@ img {
     cursor: pointer;
     transition: 0.5s;
     text-align: center;
+}
+
+.computation-v2 .btn:hover {
+    opacity: 0.5;
 }
 
 
@@ -846,6 +849,9 @@ img {
         margin-left: 10px;
     } */
 
+    .hero .container{
+        height: 330px;
+    }
     
     .hero .hero-content,
     .hero .hero-text {
@@ -957,9 +963,60 @@ img {
         grid-template-columns: 1fr;
     }
 
+    .computation-v2 .A-card,
+    .computation-v2 .B-card,
+    .computation-v2 .C-card,
+    .computation-v2 .D-card {
+        min-height: 125px;
+        max-height: 175px;
+        /* align-items: center; */
+        /* vertical-align: middle; */
+        border-radius: 15px;
+        box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+        /* padding: 20px; */
+        background-color: #fff;
+        transition: transform 0.2s ease-in;
+    }
+
+
     /* SKILLS */
     .faq .faq-header{
         text-align: center;
+    }
+
+    .faq .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-wrap: wrap; /*The cards sort according to the window size*/
+    }
+
+    .faq .card {
+        margin: 10px 4px 30px;
+        text-align: center;
+        background-color: #fff;
+        color: #333;
+        border-radius: 15px;
+        box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+        padding: 10px;
+        transition: transform 0.2s ease-in;
+        min-width: 100px;
+    }
+
+    .faq .card h4{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .faq .card p{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .faq .logo_SL {
+        height: 30px;
+        width: 30px;
     }
 
     /* FOOTER */
@@ -970,6 +1027,17 @@ img {
 
     .footer .footer-grid > div {
         text-align: center;
+    }
+
+    .footer a {
+        justify-content:center;
+        /* align-items: center;
+        text-align: center; */
+        /* max-width: 200px; */
+    }
+
+    .footer img {
+        max-width: 220px;        
     }
 
     /* Text */
