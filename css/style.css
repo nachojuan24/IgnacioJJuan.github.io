@@ -38,12 +38,15 @@ img {
 .navbar {
     background: #fff;
     padding: 10px;
+    /* position: sticky; */
+    top: 0;
 }
 
 .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 50px;
 }
 
 .navbar .logo {
@@ -65,7 +68,7 @@ img {
 }
 
 .navbar ul li a:hover {
-    color: var(--light-color);
+    color: var(--primary-color);
 }
 
 .navbar ul li:last-child a {
@@ -86,7 +89,7 @@ img {
     /* background: url('../images/UA_back2.jpg') no-repeat;
     background-size: cover;
     background-position: center bottom; */
-    height: 380px;
+    height: 420px;
     /* border-radius: 25px; */
 }
 
@@ -587,6 +590,10 @@ img {
     margin-right: 10px;
 }
 
+.footer img {
+    max-width: 220px;        
+}
+
 .footer .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -954,6 +961,7 @@ img {
 
     /* COMPUTATIONAL SKILLS */
 
+    
     .computation-v2 .computation-v2-heading{
         text-align: center;
     }
@@ -975,7 +983,16 @@ img {
         box-shadow: 0 3px 10px rgb(0,0,0,0.2);
         /* padding: 20px; */
         background-color: #fff;
+        /* background: #fff; */
         transition: transform 0.2s ease-in;
+        align-items: center;
+    }
+
+    .computation-v2 .card-heading{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        line-height: 1.2;
+        font-size: 1.4rem;
     }
 
 
@@ -1020,7 +1037,6 @@ img {
     }
 
     /* FOOTER */
-
     .footer .card{
         margin-right: 0;
     }
@@ -1052,6 +1068,7 @@ img {
     .text-md {
         font-size: 1.0rem;
     }
+
 }
 
 @media (max-width: 500px) {
