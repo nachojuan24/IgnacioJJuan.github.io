@@ -170,7 +170,7 @@ img {
 /* Education v2 */
 
 .scientific {
-    padding: 10px 0 40px;
+    padding: 40px 0 40px;
 }
 
 .scientific .container{
@@ -180,11 +180,11 @@ img {
 }
 
 .scientific .scientific-heading {
-    padding: 50px 0 0;    
+    padding: 0;    
 }
 
 .scientific .scientific-intro {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .scientific .top-collage {
@@ -295,7 +295,7 @@ img {
 }
 
 .last .last-heading{
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .last .last-card-grid {
@@ -349,7 +349,7 @@ img {
 
 /* Computation */
 .computation {
-    padding: 10px 0 40px;
+    padding: 50px 0 40px;
 }
 
 .computation .computation-body {
@@ -1009,6 +1009,7 @@ img {
 
     .scientific .scientific-heading{
         text-align: center;
+        margin-top: 50px;
     }
 
     .scientific .top-collage{
@@ -1051,6 +1052,7 @@ img {
 
     .last .last-heading{
         text-align: center;
+        margin-top: 50px;
     }
 
     .last .last-card-grid{
