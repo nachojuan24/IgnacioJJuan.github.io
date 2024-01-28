@@ -89,7 +89,7 @@ img {
     /* background: url('../images/UA_back2.jpg') no-repeat;
     background-size: cover;
     background-position: center bottom; */
-    height: 420px;
+    height: 600px;
     /* border-radius: 25px; */
 }
 
@@ -173,8 +173,14 @@ img {
     padding: 10px 0 40px;
 }
 
+.scientific .container{
+    /* min-height: 650px; */
+    min-height: 650px;
+    align-items: center;
+}
+
 .scientific .scientific-heading {
-    padding: 10px 0 0;    
+    padding: 50px 0 0;    
 }
 
 .scientific .scientific-intro {
