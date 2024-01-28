@@ -89,7 +89,7 @@ img {
     /* background: url('../images/UA_back2.jpg') no-repeat;
     background-size: cover;
     background-position: center bottom; */
-    height: 600px;
+    height: 420px;
     /* border-radius: 25px; */
 }
 
@@ -939,7 +939,7 @@ img {
     } */
 
     .hero .container{
-        height: 330px;
+        height: 600px;
     }
     
     .hero .hero-content,
