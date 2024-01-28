@@ -15,7 +15,7 @@ body{
 
 /* Some definitions */
 :root {
-    --primary-color: #4E8098;
+    --primary-color: #0B5351;
     --light-color: #fafaf6;
     --dark-color: #111;
 }
@@ -277,6 +277,70 @@ img {
 }
 
 
+/* Last projects */
+.last {
+    padding: 40px;
+}
+
+.last .container{
+    /* min-height: 650px; */
+    min-height: 650px;
+    align-items: center;
+}
+
+.last .last-heading{
+    margin-top: 70px;
+}
+
+.last .last-card-grid {
+    display: grid;
+    min-height: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.last .A-card,
+.last .B-card,
+.last .C-card {
+    min-height: 375px;
+    /* max-height: 375px; */
+    /* align-items: center; */
+    /* vertical-align: middle; */
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in;
+}
+
+.last .card-heading {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* color: #0B5351; */
+    color: var(--primary-color);
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.last .card-subheading {
+    margin-top: 0;
+    margin-bottom: 10px;
+    /* color: #0B5351; */
+    color: var(--primary-color);
+}
+
+.last .card-body {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+    color: #000;
+}
+
+
+
 /* Computation */
 .computation {
     padding: 10px 0 40px;
@@ -373,6 +437,7 @@ img {
 
 .computation-v2 .computation-v2-intro {
     margin-bottom: 40px;
+    color: #000;
 }
 
 
@@ -459,6 +524,7 @@ img {
 .computation-v2 .btn:hover {
     opacity: 0.5;
 }
+
 
 
 /* FAQ aka skills*/
@@ -746,9 +812,19 @@ img {
     color: #fff;
 }
 
+.bg-dark-primary {
+    background: #0B5351;
+    color: #fff;
+}
+
 .bg-light {
     background: var(--light-color);
     color: #333;
+}
+
+.bg-light-primary {
+    background: #d5d5c8a9;
+    color: #0B5351;
 }
 
 .bg-dark {
@@ -959,9 +1035,46 @@ img {
         color: #fff;
     }
 
-    /* COMPUTATIONAL SKILLS */
+    /* LAST PROJECTS */
+    .last .last-heading{
+        text-align: center;
+    }
 
-    
+    .last .last-card-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .last .A-card,
+    .last .B-card,
+    .last .C-card {
+        min-height: 140px;
+        max-height: 140px;
+        /* align-items: center; */
+        /* vertical-align: middle; */
+        border-radius: 15px;
+        box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+        /* padding: 20px; */
+        background-color: #fff;
+        /* background: #fff; */
+        transition: width 0.5s ease-in-out;
+        align-items: center;
+    }
+
+    .last .card-heading {
+        margin-top: 0;
+        font-size: 1.3rem;
+    }
+
+    .last .card-subheading {
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+
+    .last .card-body {
+        display: none;
+    }
+
+    /* COMPUTATIONAL SKILLS */   
     .computation-v2 .computation-v2-heading{
         text-align: center;
     }
@@ -977,6 +1090,7 @@ img {
     .computation-v2 .D-card {
         min-height: 125px;
         max-height: 175px;
+        padding-top: 10px;
         /* align-items: center; */
         /* vertical-align: middle; */
         border-radius: 15px;
@@ -989,10 +1103,15 @@ img {
     }
 
     .computation-v2 .card-heading{
-        margin-top: 30px;
-        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         line-height: 1.2;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+    }
+
+    .computation-v2 .A-card .card-heading,
+    .computation-v2 .B-card .card-heading{
+        font-size: 1.2rem;
     }
 
 
