@@ -311,7 +311,8 @@ img {
 .last .A-card,
 .last .B-card,
 .last .C-card {
-    min-height: 375px;
+    min-height: 345px;
+    max-height: 345px;
     /* max-height: 375px; */
     /* align-items: center; */
     /* vertical-align: middle; */
@@ -339,7 +340,7 @@ img {
 }
 
 .last .card-body {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-bottom: 10px;
     padding: 20px;
     color: #000;
