@@ -124,11 +124,13 @@ img {
 .presentation .presentation-body {
     /* text-align: justify; */
     margin-bottom: 20px;
+    font-weight: 200;
 }
 
 .presentation .presentation-final {
     /* text-align: justify; */
     margin-bottom: 15px;
+    font-weight: 200;
 }
 
 .presentation .presentation-grid {
@@ -166,6 +168,9 @@ img {
     border-radius: 5px;
 }
 
+.presentation strong {
+    font-weight: 600;
+}
 
 /* Education v2 */
 
@@ -308,6 +313,7 @@ img {
     margin-bottom: 40px;
 }
 
+.last .O-card,
 .last .A-card,
 .last .B-card,
 .last .C-card {
