@@ -300,59 +300,191 @@ img {
 }
 
 .last .last-heading{
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* padding-left: 20px; */
+    font-size: x-large;
 }
 
+/* Grid que mantiene las 3 cards a la misma altura */
 .last .last-card-grid {
     display: grid;
     min-height: 100px;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
     gap: 20px;
+    align-items: stretch;     /* hace que las tarjetas ocupen la misma altura */
+    grid-auto-rows: 1fr;      /* filas con altura igual para respetar estética */
     padding: 20px;
     margin-bottom: 40px;
 }
 
-.last .O-card,
-.last .A-card,
-.last .B-card,
-.last .C-card {
-    min-height: 345px;
-    max-height: 345px;
-    /* max-height: 375px; */
-    /* align-items: center; */
-    /* vertical-align: middle; */
-    border-radius: 20px;
-    box-shadow: 0 3px 10px rgb(0,0,0,0.2);
-    padding: 20px;
-    background-color: #fff;
+/* Estética consistente: bordes, sombra, fondo y distribución interna */
+.last .last-card-grid .A-card,
+.last .last-card-grid .B-card,
+.last .last-card-grid .C-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;                             /* mantiene paleta clara */
+    color: #333;
+    border-radius: 15px;                          /* bordes redondeados */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);       /* sombra coherente con el resto */
+    overflow: hidden;
     transition: transform 0.2s ease-in;
 }
 
-.last .card-heading {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    /* color: #0B5351; */
+/* Encabezados y subtítulos con colores del proyecto */
+.last .last-card-grid .card-heading {
     color: var(--primary-color);
-    line-height: 1.2;
+    margin: 18px 20px 6px;
     font-weight: 600;
+    line-height: 1.2;
 }
 
-.last .card-subheading {
-    margin-top: 0;
-    margin-bottom: 10px;
-    /* color: #0B5351; */
-    color: var(--primary-color);
+.last .last-card-grid .card-subheading {
+    color: #000;
+    margin: 0 20px 10px;
+    font-size: 0.95rem;
 }
 
-.last .card-body {
-    /* margin-top: 20px; */
+/* Cuerpo: que ocupe el espacio restante, se adapte y no provoque scroll visible */
+.last .last-card-grid .card-body {
+    flex: 1 1 auto;          /* rellena y permite igualación de alturas */
+    min-height: 0;           /* necesario en flex para poder reducirse */
+    padding: 0 20px 20px;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+}
+
+/* Fellowship */
+.fellowship {
+    padding: 40px;
+}
+
+.fellowship .container{
+    /* min-height: 650px; */
+    min-height: 650px;
+    align-items: center;
+    padding: 0 35px;
+}
+
+.fellowship .fellowship-heading {
+    padding: 0;    
+}
+
+.fellowship .sub-heading {
+    padding: 0;
+    font-size: x-large;
+}
+
+.fellowship .intro {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.fellowship .intro a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--light-color);
+}
+
+.fellowship .intro a:hover {
+    text-decoration: underline;
+}
+
+.fellowship .hidden {
+    display: none;
+}
+
+.fellowship .hidden-content {
     margin-bottom: 10px;
     padding: 20px;
     color: #000;
 }
 
+.fellowship .top-collage {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
+.fellowship .top-collage .ag-card,
+.fellowship .top-collage .collider-card,
+.fellowship .top-collage .exp-card {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    max-height: 320px;
+    min-height: 200px;
+    border-radius: 14px;
+}
+
+/* Grid layout for cards */
+.fellowship .top-collage .grid-card-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+    align-items: center;
+    justify-items: center;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.fellowship .top-collage .grid-card-content .card-img{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    height: auto;
+    border-radius: 8px;
+    align-self: center;
+    padding: 5px;
+}
+
+.fellowship .top-collage .grid-card-content .card-text {
+    max-width: 100%;
+    text-align: left;
+}
+
+.fellowship .top-collage .grid-card-content .card-text .card-heading {
+    font-weight: bold;
+    font-size: x-large;
+    color: var(--primary-color);
+    max-width: 100%;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.fellowship .top-collage .grid-card-content .card-text ul{
+    max-width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 15px;
+    list-style-type: disc;
+}
+
+.fellowship .top-collage .grid-card-content .card-text ul li {
+    text-align: left;
+    padding-right: 10px;
+    list-style-type: disc;
+}
+
+.fellowship .top-collage .grid-card-content .card-text a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: bold;
+}
+
+.fellowship .top-collage .grid-card-content .card-text a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
 
 /* Computation */
 .computation {
@@ -443,6 +575,14 @@ img {
 .computation-v2 {
     padding: 10px 0 40px;
 }
+
+.computation-v2 .container{
+    /* min-height: 650px; */
+    min-height: 650px;
+    align-items: center;
+    padding: 0 35px;
+}
+
 
 .computation-v2 .computation-v2-heading {
     padding: 10px 0 0;    
@@ -544,6 +684,12 @@ img {
 
 .faq {
     padding: 40px;
+}
+
+.faq .container{
+    /* min-height: 650px; */
+    align-items: center;
+    padding: 0 35px;
 }
 
 .faq-group {
@@ -652,8 +798,16 @@ img {
     padding: 40px 0;
 }
 
+.footer .container{
+    /* min-height: 650px; */
+    min-height: 200px;
+    align-items: center;
+    padding: 0 35px;
+}
+
 .footer h4 {
     margin-bottom: 10px;
+    font-size: large;
 }
 
 .footer ul li {
@@ -665,7 +819,7 @@ img {
 }
 
 .footer i {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-right: 10px;
 }
 
@@ -678,7 +832,7 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .footer .card {
@@ -1059,16 +1213,17 @@ img {
 
     .last .last-heading{
         text-align: center;
-        margin-top: 50px;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
 
     .last .last-card-grid{
         grid-template-columns: 1fr;
     }
 
-    .last .A-card,
-    .last .B-card,
-    .last .C-card {
+    .last .last-card-grid .A-card,
+    .last .last-card-grid .B-card,
+    .last .last-card-grid .C-card {
         min-height: 140px;
         max-height: 140px;
         /* align-items: center; */
@@ -1082,17 +1237,17 @@ img {
         align-items: center;
     }
 
-    .last .card-heading {
-        margin-top: 0;
-        font-size: 1.3rem;
+    .last .last-card-grid .card-heading {
+        margin-top: 15px;
+        font-size: 1.5rem;
     }
 
-    .last .card-subheading {
+    .last .last-card-grid .card-subheading {
         margin-top: 10px;
         font-size: 0.9rem;
     }
 
-    .last .card-body {
+    .last .last-card-grid .card-body {
         display: none;
     }
 
